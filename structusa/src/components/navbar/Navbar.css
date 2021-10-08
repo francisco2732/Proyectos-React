@@ -1,0 +1,55 @@
+.navbar {
+    position: fixed;
+    top: 0;
+    background-color: transparent;
+    width: 100%;
+    height: 100px;
+    font-size: 20px;
+    z-index: 1;    /* para que este por encima del cover */
+
+}
+
+.scrolling {
+    background-color: black;
+    transition: all 0.5s ease;
+}
+
+.navbar-logo {
+    color: white;
+    cursor: pointer;
+}
+
+.navbar-logo > img {
+    width: 10vh;
+    position: absolute;
+    top: 20px;
+
+}
+
+.lista {
+    list-style: none;
+    width: 80%;
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+    align-items: center;
+    padding: 30px 0 30px 0 ;
+    color: white;
+}
+
+.lista > li {
+    cursor: pointer;
+}
+
+.text-link {
+    color: inherit;
+    text-decoration: inherit;
+}
+
+@media only screen and (max-width:960px){
+    .navbar-logo > img {
+        width: 5vh;
+        height: 5vh;
+        position: absolute;
+    }
+}
